@@ -1,0 +1,123 @@
+:root {
+  --dark-1: #00103b;
+  --dark-2: #001757;
+  --light-1: #fff;
+  --light-2: #ff3cb4;
+}
+
+body {
+  background: #00103b;
+  color: var(--light-1);
+  font-family: 'MuseoModerno', cursive;
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: lighter;
+  margin: 5px 0;
+}
+
+p { margin: 0; margin-bottom: 40px; }
+
+a {
+  font-weight: bold;
+  color: var(--light-2);
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+nav {
+  position: relative;
+  background: var(--dark-2);
+  top: 0; left: 0;
+  width: 100%;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.5);
+  text-decoration: none;
+  height: 50px;
+}
+
+nav a {
+  text-decoration: none;
+  height: 30px;
+  float: left;
+  transition: background .2s;
+  padding: 10px;
+}
+
+nav a:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+main {
+  padding: 10px;
+  width: calc(100% - 20);
+  height: calc(100vh - 70px);
+  overflow: auto;
+}
+
+footer {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 10px;
+  text-align: center;
+  margin-top: 40px;
+  box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.5);
+}
+
+.paste {
+  outline: none;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.2);
+  text-align: center;
+  height: 350px;
+  box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.5);
+  transition: background .15s;
+}
+
+.paste img {
+  max-height: 350px;
+  max-width: 100%;
+}
+
+.paste:hover {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+button {
+  width: 100%;
+  border: none;
+  outline: 0;
+  border-radius: 5px;
+  padding: 10px;
+  transition: background .2s;
+  font-family: 'MuseoModerno', cursive;
+  font-weight: bold;
+  background: rgba(255, 255, 255, 0.5);
+  font-size: 150%;
+  cursor: pointer;
+}
+
+button:hover {
+  background: rgba(255, 255, 255, 0.75);
+}
+
+.btn {
+  margin: 4px 0;
+  display: block;
+  border: none;
+  outline: 0;
+  border-radius: 5px;
+  padding: 10px;
+  color: #000;
+  transition: background .2s;
+  font-family: 'MuseoModerno', cursive;
+  font-weight: bold;
+  background: rgba(255, 255, 255, 0.5);
+  font-size: 100%;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: rgba(255, 255, 255, 0.75);
+}

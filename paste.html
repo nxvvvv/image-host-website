@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css2?family=MuseoModerno:wght@100;400;900&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Image Hoster</title>
+  </head>
+  <body>
+    <nav>
+      <a href="/upload">Upload</a>
+      <a href="/paste">Paste</a>
+    </nav>
+    <main>
+
+    <button class="pasteprompt">Click here and paste</button>
+    <h1>Preview</h1>
+    <div contenteditable="true" class="paste"></div>
+    <button class="reset" hidden>Reset</button>
+    <form method="POST" action="/upload_paste">
+      <input name="url" class="data" hidden required>
+      <br>
+      <button type="submit">Upload</button>
+    </form>
+    
+    <footer>Created by <a href="https://repl.it/@coder100">Coder100</a></footer>
+    
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
