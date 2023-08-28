@@ -48,7 +48,7 @@ app
   })
   .post("/upload", upload.single('data'), (req, res) => {
     if (!/image/.test(req.file.mimetype)) {
-      res.end("AHAHAHAHAHAHA HACKER YOU HAVE BEEN FOILED! YOU THINK YOU CAN HACK ME? THINK AGAIN! ~Navaneeth K M")
+      res.end("no")
       return;
     }
     let ext = req.file.mimetype.split("/")[1];
